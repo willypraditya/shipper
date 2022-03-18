@@ -1,6 +1,8 @@
 .sidebar {
-  height: 100%;
   &__menu {
-    margin-top: 0px !important;
+    height: 100%;
+    &__item {
+      margin-top: 0px !important;
+    }
   }
 }

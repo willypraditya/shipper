@@ -5,15 +5,19 @@ import { Content } from 'antd/lib/layout/layout';
 
 import Navbar from '../Navbar';
 import Sidebar from '../Sidebar';
+import useMainLayoutHooks from './hooks';
 import styles from './index.module.scss';
 
 const MainLayout = (props: { children: ReactElement }) => {
   const { children } = props;
+
+  const hooks = useMainLayoutHooks();
+
   return (
     <div className={styles.mainLayout}>
-      <Navbar />
+      <Navbar sidebarCollapsed={hooks.sidebarCollapsed} setSidebarCollapsed={hooks.setSidebarCollapsed} />
       <Layout hasSider className={styles.mainLayout__content}>
-        <Sidebar />
+        <Sidebar collapsed={hooks.sidebarCollapsed} />
         <Content>{children}</Content>
       </Layout>
     </div>

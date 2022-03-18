@@ -5,7 +5,12 @@
   height: $navbar-desktop-height;
   padding: 30px;
   &__burger {
-    display: none;
+    display: inline;
+    margin-right: 20px;
+    &__icon {
+      font-size: 18px;
+      color: $gray;
+    }
   }
   &__logo {
     width: 150px;
@@ -25,14 +30,6 @@
   .navbar {
     height: $navbar-mobile-height;
     padding: 20px;
-    &__burger {
-      display: inline;
-      margin-right: 20px;
-      &__icon {
-        font-size: 18px;
-        color: $gray;
-      }
-    }
     &__helloUser {
       display: none;
     }
