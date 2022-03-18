@@ -1,0 +1,38 @@
+@import '@styles/variables.scss';
+
+.navbar {
+  width: 100%;
+  padding: 30px;
+  &__burger {
+    display: none;
+  }
+  &__logo {
+    width: 150px;
+  }
+  &__helloUser {
+    font-size: 24px;
+    &__userName {
+      color: $shipper-red;
+    }
+  }
+  &__avatar {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 20px;
+    &__burger {
+      display: inline;
+      margin-right: 20px;
+      &__icon {
+        font-size: 18px;
+        color: $gray;
+      }
+    }
+    &__helloUser {
+      display: none;
+    }
+  }
+}
