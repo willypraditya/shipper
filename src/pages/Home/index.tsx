@@ -1,8 +1,6 @@
 import { ReactElement } from 'react';
 
-import { Card, Spin, Typography } from 'antd';
-
-import Navbar from '@pages/Components/Navbar';
+import MainLayout from '@pages/Components/MainLayout';
 
 import useHomeHooks from './hooks';
 import styles from './index.module.scss';
@@ -11,9 +9,11 @@ const Home = (): ReactElement => {
   const hooks = useHomeHooks();
 
   return (
-    <div className={styles.home}>
-      <Navbar />
-    </div>
+    <MainLayout>
+      <div className={styles.home}>
+        <div className={styles.content}>test</div>
+      </div>
+    </MainLayout>
   );
 };
 

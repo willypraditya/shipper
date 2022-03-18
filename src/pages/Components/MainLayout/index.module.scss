@@ -1,0 +1,15 @@
+@import '@styles/variables.scss';
+
+.mainLayout {
+  &__content {
+    min-height: calc(100vh - $navbar-desktop-height);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainLayout {
+    &__content {
+      min-height: calc(100vh - $navbar-mobile-height);
+    }
+  }
+}

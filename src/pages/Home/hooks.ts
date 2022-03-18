@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const useHomeHooks = () => {
   const [loading, setLoading] = useState<boolean>(false);
