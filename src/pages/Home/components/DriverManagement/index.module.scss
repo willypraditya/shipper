@@ -1,0 +1,47 @@
+@import '@styles/variables.scss';
+
+.manage {
+  background-color: $white;
+  padding: 30px;
+  border-radius: 5px;
+  &__text {
+    &__title {
+      font-size: 24px;
+      font-weight: 800;
+      color: $shipper-red;
+    }
+  }
+  &__action {
+    max-width: 500px;
+    &__search {
+      &__icon {
+        color: $shipper-red;
+      }
+    }
+    &__addDriver {
+      background-color: $shipper-red;
+      border-color: $shipper-red;
+      color: $white;
+      font-weight: 600;
+      min-width: 185px;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $shipper-red;
+        border-color: $shipper-red;
+        color: $white;
+      }
+      &__icon {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .manage {
+    &__action {
+      max-width: 100%;
+    }
+  }
+}
