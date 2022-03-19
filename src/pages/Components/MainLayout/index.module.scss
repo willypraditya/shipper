@@ -3,6 +3,9 @@
 .mainLayout {
   &__content {
     min-height: calc(100vh - $navbar-desktop-height);
+    &__content {
+      padding: 30px;
+    }
   }
 }
 
@@ -10,6 +13,9 @@
   .mainLayout {
     &__content {
       min-height: calc(100vh - $navbar-mobile-height);
+      &__content {
+        padding: 20px;
+      }
     }
   }
 }

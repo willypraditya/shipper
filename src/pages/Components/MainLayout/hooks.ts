@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
 const useMainLayoutHooks = () => {
-  const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(false);
+  const [sidebarVisible, setSidebarVisible] = useState<boolean>(false);
 
   return {
-    sidebarCollapsed,
-    setSidebarCollapsed,
+    sidebarVisible,
+    setSidebarVisible,
   };
 };
 

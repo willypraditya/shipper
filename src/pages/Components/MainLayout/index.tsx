@@ -15,10 +15,10 @@ const MainLayout = (props: { children: ReactElement }) => {
 
   return (
     <div className={styles.mainLayout}>
-      <Navbar sidebarCollapsed={hooks.sidebarCollapsed} setSidebarCollapsed={hooks.setSidebarCollapsed} />
+      <Navbar sidebarVisible={hooks.sidebarVisible} setSidebarVisible={hooks.setSidebarVisible} />
       <Layout hasSider className={styles.mainLayout__content}>
-        <Sidebar collapsed={hooks.sidebarCollapsed} />
-        <Content>{children}</Content>
+        <Sidebar />
+        <Content className={styles.mainLayout__content__content}>{children}</Content>
       </Layout>
     </div>
   );

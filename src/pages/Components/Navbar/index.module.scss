@@ -5,7 +5,7 @@
   height: $navbar-desktop-height;
   padding: 30px;
   &__burger {
-    display: inline;
+    display: none;
     margin-right: 20px;
     &__icon {
       font-size: 18px;
@@ -24,14 +24,23 @@
   &__avatar {
     margin-left: 10px;
   }
+  &__drawer {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .navbar {
     height: $navbar-mobile-height;
     padding: 20px;
+    &__burger {
+      display: inline;
+    }
     &__helloUser {
       display: none;
+    }
+    &__drawer {
+      display: inline;
     }
   }
 }
