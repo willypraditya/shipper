@@ -1,13 +1,13 @@
-import { Message } from 'types/common';
+import { DriverDataResponse } from 'types/driver';
 
 import getClient from './client';
 
 const client = getClient();
 
 // Sample Fetching
-const getTest = async (): Promise<Message> => {
-  const response = await client.get('url-here');
+const fetchDriverData = async (): Promise<DriverDataResponse> => {
+  const response = await client.get('/api', { params: { results: 30 } });
   return response.data;
 };
 
-export default getTest;
+export default fetchDriverData;

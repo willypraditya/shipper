@@ -1,4 +1,7 @@
 .driverList {
+  &__loading {
+    text-align: center;
+  }
   &__content {
     overflow: auto;
     white-space: nowrap;
