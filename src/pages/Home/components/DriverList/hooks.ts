@@ -34,6 +34,11 @@ const useDriverListHooks = (searchDriver: string) => {
       setLoading(false);
     };
     fetchData();
+
+    return () => {
+      setMaxPage(0);
+      setData([]);
+    };
   }, []);
 
   useEffect(() => {

@@ -6,6 +6,9 @@ export interface DriverData {
     first: string;
     last: string;
   };
+  dob: {
+    date: string;
+  };
   phone: string;
   email: string;
 }

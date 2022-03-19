@@ -5,9 +5,11 @@ import { Avatar, Col, Row, Typography } from 'antd';
 
 import { EllipsisOutlined, UserOutlined } from '@ant-design/icons';
 
+import { DriverData } from 'types/driver';
+
 import styles from './index.module.scss';
 
-const DriverCard = (props: { data: any }): ReactElement => {
+const DriverCard = (props: { data: DriverData }): ReactElement => {
   const { data } = props;
   return (
     <div className={styles.card}>

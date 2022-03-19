@@ -28,6 +28,7 @@ const DriverList = (props: { searchDriver: string }): ReactElement => {
             <div className={styles.driverList__pagination}>
               <div className={styles.driverList__pagination__actions}>
                 <Button
+                  data-testid="driver-list-prev-page"
                   type="text"
                   onClick={() => hooks.setPage(hooks.page - 1)}
                   className={styles.driverList__pagination__actions__prev}
@@ -37,6 +38,7 @@ const DriverList = (props: { searchDriver: string }): ReactElement => {
                   Previous Page
                 </Button>
                 <Button
+                  data-testid="driver-list-next-page"
                   type="text"
                   onClick={() => hooks.setPage(hooks.page + 1)}
                   className={styles.driverList__pagination__actions__next}

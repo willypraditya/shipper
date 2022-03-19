@@ -20,6 +20,7 @@ const DriverManagement = (props: { setSearch: Dispatch<SetStateAction<string>> }
           <Row gutter={[12, 12]}>
             <Col xs={24} lg={12}>
               <Input
+                data-testid="search-driver-input"
                 size="large"
                 placeholder="Cari Driver"
                 className={styles.manage__search}
