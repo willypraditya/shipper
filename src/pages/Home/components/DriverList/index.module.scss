@@ -1,0 +1,21 @@
+.driverList {
+  &__content {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  &__pagination {
+    width: 100%;
+    &__actions {
+      width: 300px;
+      margin: auto;
+      &__prev {
+        font-weight: 600;
+        width: 150px;
+      }
+      &__next {
+        font-weight: 600;
+        width: 150px;
+      }
+    }
+  }
+}
