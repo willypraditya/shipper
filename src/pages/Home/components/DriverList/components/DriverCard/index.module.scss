@@ -4,7 +4,10 @@
   width: 300px;
   background-color: $white;
   display: inline-block;
-  margin: 10px 10px 10px 0px;
+  margin: 10px 30px 10px 0px;
+  &:last-child {
+    margin: 10px 0px 10px 0px;
+  }
   border-radius: 5px;
   &__header {
     padding: 20px;
